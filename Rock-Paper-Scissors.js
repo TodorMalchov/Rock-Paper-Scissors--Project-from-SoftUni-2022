@@ -16,24 +16,30 @@ function rockPaperScissors(playerChoice){
         }
     console.log(`You choose ${playerChoice}`)
 
+    //Computer Choice
+
     let randomNumber = Math.floor(Math.random() * 3) + 1
-    let computerChoise = ''
+    let computerChoice = ''
 
     switch (randomNumber){
-        case 1 : computerChoise = 'Rock' 
+        case 1 : computerChoice = 'Rock' 
         break
-        case 2 : computerChoise = 'Paper'
+        case 2 : computerChoice = 'Paper'
         break
-        case 3 : computerChoise = 'Scissors'
+        case 3 : computerChoice = 'Scissors'
         break
     }   
-        console.log(`The computer chose ${computerChoise}.`)
+        console.log(`The computer chose ${computerChoice}.`)
+
+        //Win or Lose
     
-    if((playerChoice == rock && computerChoise == 'Scissors') || (playerChoice == paper && computerChoise == 'Rock') || 
-    (playerChoice == scissors && computerChoise == 'Paper')){
+    if((playerChoice == rock && computerChoice == 'Scissors') 
+    || (playerChoice == paper && computerChoice == 'Rock') 
+    || (playerChoice == scissors && computerChoice == 'Paper')){
         console.log('You Win!')
-    }else if((playerChoice == rock && computerChoise == 'Paper') || (playerChoice == paper && computerChoise == 'Scissors') ||
-    (playerChoice == scissors && computerChoise == 'Rock')){
+    }else if((playerChoice == rock && computerChoice == 'Paper')
+    || (playerChoice == paper && computerChoice == 'Scissors') 
+    || (playerChoice == scissors && computerChoice == 'Rock')){
         console.log('You Lose!')
     }else{
         console.log('This game was a draw!')
