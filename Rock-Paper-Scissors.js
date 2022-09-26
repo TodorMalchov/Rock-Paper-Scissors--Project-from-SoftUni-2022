@@ -22,7 +22,7 @@ function rockPaperScissors(playerChoice){
     switch (randomNumber){
         case 1 : computerChoise = 'Rock' 
         break
-        case 2 : computerChoise = 'Papper'
+        case 2 : computerChoise = 'Paper'
         break
         case 3 : computerChoise = 'Scissors'
         break
@@ -39,4 +39,4 @@ function rockPaperScissors(playerChoice){
         console.log('This game was a draw!')
     }
 }
-rockPaperScissors('p')
+rockPaperScissors('r')
